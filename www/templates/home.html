@@ -1,0 +1,14 @@
+<ion-view title="記事本">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear" ng-click="addNote()">新增</button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list class="list list-inset">
+            <ion-item class="item item-button-right" ng-repeat="note in notes">
+                    <p>{{note.title}}</p>
+                    <span>{{note.message}}</span>
+            </ion-item>
+        </ion-list>
+        <span ng-show="!notes.length">目前沒有資料!!</span>
+    </ion-content>
+</ion-view>

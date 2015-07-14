@@ -1,0 +1,18 @@
+<ion-view title="編輯記事">
+    <ion-nav-buttons side="left">
+        <button class="button" ng-click="go('#home')">取消返回</button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button" ng-click="update(note)">修改</button>
+        <button class="button" ng-click="del(note)">刪除</button>
+    </ion-nav-buttons>
+    <ion-content>
+        <label class="item item-input">
+            <span class="input-label">標題</span>
+            <input type="text" ng-model="note.title">
+        </label>
+        <label class="item item-input">
+            <textarea placeholder="記事內容" ng-model="note.message"></textarea>
+        </label>
+    </ion-content>
+</ion-view>
